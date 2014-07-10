@@ -41,13 +41,13 @@ class roundToNearestX {
 	static void roundToNearestX(double num, double x) {
 	
 		double factor = Math.round(num / x);	// Determine multiplicative factor
-		Double result = x * factor;				// Result will be X multiplied by factor determined in previous step
-		int intResult = result.intValue();		// Convert double to integer for printing purposes
+		Double result = x * factor;		// Result will be X multiplied by factor determined in previous step
+		int intResult = result.intValue();	// Convert double to integer for printing purposes
 		
 		if (intResult == 0)
 			System.out.println("Result must not round number to zero");		// Requirement: result must not round to zero.
 		else
-			System.out.println(intResult);									// All checks have passed, so print result
+			System.out.println(intResult);						// All checks have passed, so print result
 	
 	}
 	
